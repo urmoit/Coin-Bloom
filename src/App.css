@@ -1,11 +1,30 @@
 .app {
   display: grid;
   grid-template-columns: 188px 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     'sidebar header'
-    'sidebar main';
+    'sidebar main'
+    'footer footer';
   min-height: 100vh;
+}
+
+.app-footer {
+  grid-area: footer;
+  background: var(--app-surface-alt);
+  border-top: 1px solid var(--app-border);
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-notice {
+  color: var(--app-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  opacity: 0.8;
 }
 
 .main {
