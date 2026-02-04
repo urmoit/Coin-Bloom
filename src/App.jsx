@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useGameState } from './hooks/useGameState';
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
-import { Footer } from './components/Footer';
 import { BusinessList } from './components/BusinessList';
 import { ManagersTab } from './components/ManagersTab';
 import { TabInfo } from './components/TabInfo';
@@ -84,7 +83,6 @@ export default function App() {
           setTheme={setTheme}
         />
       )}
-      <Footer />
     </div>
   );
 }
